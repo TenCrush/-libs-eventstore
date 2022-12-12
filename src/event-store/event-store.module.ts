@@ -2,7 +2,8 @@ import { Global, Module, DynamicModule } from '@nestjs/common';
 import { EventStore } from './event-store.class';
 import { ConnectionSettings, GossipSeed, TcpEndPoint } from 'node-eventstore-client';
 
-export type HttpEndpoint = GossipSeed;
+export class HttpEndpoint extends GossipSeed {
+};
 
 export interface EventStoreModuleOptions {
     connectionSettings: ConnectionSettings;

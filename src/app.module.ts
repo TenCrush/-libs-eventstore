@@ -1,5 +1,5 @@
+import { HttpEndpoint } from './event-store/event-store.module';
 import { Module } from '@nestjs/common';
-import { GossipSeed } from 'node-eventstore-client';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { EventStoreBusConfig, EventStoreCqrsModule, IEventConstructors } from './event-store/eventstore-cqrs';
@@ -52,9 +52,9 @@ export const eventStoreBusConfig: EventStoreBusConfig = {
                         },
                         endpoint:
                             [
-                                new GossipSeed({ host: '127.0.0.1', port: 2133 }, 'localhost'),
-                                new GossipSeed({ host: '127.0.0.1', port: 2123 }, 'localhost'),
-                                new GossipSeed({ host: '127.0.0.1', port: 2113 }, 'localhost')
+                              new HttpEndpoint({ host: '127.0.0.1', port: 2133 }, 'localhost'),
+                              new HttpEndpoint({ host: '127.0.0.1', port: 2123 }, 'localhost'),
+                              new HttpEndpoint({ host: '127.0.0.1', port: 2113 }, 'localhost')
                             ]
                         ,
                     };
