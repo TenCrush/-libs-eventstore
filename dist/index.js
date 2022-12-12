@@ -14,8 +14,8 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./src/event-store/event-store.module"), exports);
-__exportStar(require("./src/event-store/event-store.class"), exports);
-__exportStar(require("./src/event-store/eventstore-cqrs"), exports);
-__exportStar(require("./src/event-store/shared/aggregate-event.interface"), exports);
+__exportStar(require("./event-store/event-store.module"), exports);
+__exportStar(require("./event-store/event-store.class"), exports);
+__exportStar(require("./event-store/eventstore-cqrs"), exports);
+__exportStar(require("./event-store/shared/aggregate-event.interface"), exports);
 //# sourceMappingURL=index.js.map

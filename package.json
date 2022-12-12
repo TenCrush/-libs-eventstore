@@ -1,9 +1,9 @@
 {
-  "name": "eventstore-client-module",
+  "name": "@libs/eventstore",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
+  "description": "quangthap9x@gmail.com",
+  "author": "Tenny",
+  "private": false,
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
