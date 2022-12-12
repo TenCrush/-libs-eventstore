@@ -1,4 +1,3 @@
-import { Constructor } from './event-store/eventstore-cqrs/event-publisher';
 import { Module } from '@nestjs/common';
 import { GossipSeed } from 'node-eventstore-client';
 import { AppController } from './app.controller';
@@ -11,7 +10,6 @@ const events: IEventConstructors = {
     UserCreatedEvent: UserCreatedEvent,
     UserWelcomedEvent: UserWelcomedEvent,
 };
-
 export const eventStoreBusConfig: EventStoreBusConfig = {
     subscriptions: [
         // TODO: read about subs in eventStore, how can they help us.
